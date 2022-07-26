@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/bbd_common_header"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/bbd_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:fadingEdgeLength="150dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="30dp" android:layout_weight="1" android:requiresFadingEdge="vertical">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/screen_text_left_right_margin" android:paddingEnd="@dimen/screen_text_left_right_margin">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/insecure_wifi_permissions_bb_protect_icon" android:layout_width="90dp" android:layout_height="90dp" android:layout_margin="8dp" android:src="@drawable/cp_notification_icon"/>
+                    <TextView android:textSize="@dimen/text_size_heading" android:textColor="#213241" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/insecure_wifi_permissions_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/primer_screen_heading_top_margin"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/bis_primary_text_color" android:id="@+id/insecure_wifi_permissions_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/primer_screen_allow_sis_text_top_margin"/>
+                </LinearLayout>
+            </ScrollView>
+            <Button android:layout_gravity="end" android:id="@+id/insecure_wifi_permissions_continue_button" android:layout_marginTop="5dp" android:layout_marginBottom="23dp" android:layout_marginEnd="20dp" style="?android:attr/buttonStyle"/>
+            <include layout="@layout/bbd_bottom_line"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

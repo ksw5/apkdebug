@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/bbd_enter_credentials_header_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/gd_common_header_height">
+        <ImageView android:gravity="end|center_vertical" android:id="@+id/bbd_activation_header_back_button" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:scaleType="fitCenter" android:layout_centerVertical="true" android:contentDescription="Back button" android:layout_alignParentStart="true" android:layout_marginHorizontal="16dp"/>
+        <com.good.gd.widget.GDTextView android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:id="@+id/bbd_activation_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="sans-serif" style="@style/GDTextView"/>
+        <include layout="@layout/bbd_selected_noc_info"/>
+    </RelativeLayout>
+    <View android:id="@+id/COM_GOOD_GD_SMALL_MARGIN" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <View android:id="@+id/COM_GOOD_GD_BIG_MARGIN" android:layout_width="match_parent" android:layout_height="0dp"/>
+</LinearLayout>

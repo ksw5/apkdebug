@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/fragment_net_0" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/webContentView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/webLoadingView" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+</FrameLayout>

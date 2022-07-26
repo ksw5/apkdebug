@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/gd_step_check_icon" android:padding="2dp" android:visibility="gone" android:layout_width="@dimen/gd_act_progress_progress_image_height" android:layout_height="@dimen/gd_act_progress_progress_image_height" android:src="@drawable/bbd_progress_check"/>
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/gd_spinner" android:visibility="invisible" android:layout_width="@dimen/gd_act_progress_progress_image_height" android:layout_height="@dimen/gd_act_progress_progress_image_height" android:indeterminate="true" android:indeterminateDrawable="@drawable/gd_progress_bar" android:indeterminateTint="@color/bbd_blue_light"/>
+    <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_act_progress_step_text_size" android:gravity="center" android:id="@+id/gd_step_textview" android:layout_width="match_parent" android:layout_height="@dimen/gd_act_progress_textview_height" android:paddingEnd="@dimen/gd_act_progress_progress_image_height"/>
+</LinearLayout>

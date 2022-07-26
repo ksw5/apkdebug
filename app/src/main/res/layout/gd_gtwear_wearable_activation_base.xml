@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/gd_gtwear_activation_base" android:layout_width="match_parent" android:layout_height="196dp">
+    <include layout="@layout/bbd_common_header"/>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/gd_gtwear_activation_progressBar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:maxHeight="2dp" android:indeterminateDrawable="@drawable/gd_progress_bar_horizontal_in_progress" android:progressDrawable="@drawable/gd_progress_bar_horizontal" android:minHeight="2dp" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal"/>
+    <com.good.gd.widget.GDTextView android:textSize="24sp" android:textStyle="normal" android:textColor="@color/bbd_dark_grey" android:gravity="start|center_vertical" android:id="@+id/gd_gtwear_activation_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:includeFontPadding="false" android:layout_above="@+id/gd_gtwear_activation_progressBar" android:layout_marginStart="48dp" android:layout_marginEnd="16dp"/>
+</RelativeLayout>

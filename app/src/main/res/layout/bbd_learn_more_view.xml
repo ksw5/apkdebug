@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bbd_learn_more_view_UI" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/bbd_common_header"/>
+        <ScrollView android:fadingEdgeLength="150dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="30dp" android:layout_weight="1" android:requiresFadingEdge="vertical">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <com.good.gd.widget.GDTextView android:textSize="@dimen/easy_activation_elements_text_size" android:textStyle="bold" android:id="@+id/gd_learn_more_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.good.gd.widget.GDTextView android:textSize="16sp" android:id="@+id/gd_learn_more_details" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <Button android:layout_gravity="end" android:id="@+id/gd_done_button" android:layout_marginTop="5dp" android:layout_marginBottom="23dp" android:layout_marginEnd="20dp" style="?android:attr/buttonStyle"/>
+        <include layout="@layout/bbd_bottom_line"/>
+    </LinearLayout>
+</merge>

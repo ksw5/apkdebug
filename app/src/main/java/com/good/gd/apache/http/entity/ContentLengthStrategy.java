@@ -1,0 +1,12 @@
+package com.good.gd.apache.http.entity;
+
+import com.good.gd.apache.http.HttpException;
+import com.good.gd.apache.http.HttpMessage;
+
+/* loaded from: classes.dex */
+public interface ContentLengthStrategy {
+    public static final int CHUNKED = -2;
+    public static final int IDENTITY = -1;
+
+    long determineLength(HttpMessage httpMessage) throws HttpException;
+}

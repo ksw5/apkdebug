@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bbd_disclaimer_view_UI" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/bbd_common_header"/>
+        <ScrollView android:id="@+id/bbd_disclaimer_scroll_view" android:fadingEdgeLength="15dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="30dp" android:layout_weight="1" android:requiresFadingEdge="vertical">
+            <com.good.gd.widget.GDTextView android:textSize="16sp" android:id="@+id/gd_disclaimer_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+        </ScrollView>
+        <Button android:layout_gravity="end" android:id="@+id/gd_done_button" android:layout_marginTop="5dp" android:layout_marginBottom="23dp" android:layout_marginEnd="20dp" style="?android:attr/buttonStyle"/>
+        <include layout="@layout/bbd_bottom_line"/>
+    </LinearLayout>
+</merge>

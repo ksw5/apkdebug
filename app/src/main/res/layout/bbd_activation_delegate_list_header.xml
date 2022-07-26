@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.good.gd.widget.GDTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="18sp" android:textStyle="bold" android:id="@+id/list_header_company_name" android:paddingTop="@dimen/adv_lv_header_marginTop" android:paddingBottom="@dimen/adv_lv_header_marginBottom" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/adv_all_controls_marginLeft" android:paddingEnd="@dimen/adv_all_controls_marginRight"/>

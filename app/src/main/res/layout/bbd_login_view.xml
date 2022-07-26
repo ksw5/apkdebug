@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <ScrollView android:background="@color/bbd_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/bbd_login_view_UI" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="@color/bbd_background_header_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/bbd_common_header"/>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/easy_activation_login_default_margin" android:layout_marginEnd="@dimen/easy_activation_login_default_margin" layout="@layout/bbd_login_view_text"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_margin_top" android:layout_marginStart="@dimen/gd_view_start_end_margin" android:layout_marginEnd="@dimen/gd_view_start_end_margin">
+                <com.good.gd.widget.GDEditText android:textSize="@dimen/gd_text_size_large" android:id="@+id/COM_GOOD_GD_LOGIN_VIEW_PASSWORD_FIELD" android:layout_width="match_parent" android:layout_height="@dimen/easy_activation_elements_container_height" android:maxLines="1" android:inputType="textPassword" android:imeOptions="flagNoFullscreen|actionDone" style="@style/GDUIEditText"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/gd_activation_margin_regular">
+                    <ImageButton android:layout_gravity="end" android:id="@+id/password_eye" android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="@dimen/gd_eye_top_margin" android:src="@drawable/gd_eye_show_inactive" android:layout_weight="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/bbd_bottom_button"/>
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginEnd="14dp">
+                <Button android:enabled="false" android:id="@+id/COM_GOOD_GD_ADDITIONAL_BUTTON" android:visibility="invisible" android:nextFocusDown="@+id/COM_GOOD_GD_EPROV_ACCESS_BUTTON" android:layout_width="wrap_content" android:nextFocusForward="@+id/COM_GOOD_GD_EPROV_ACCESS_BUTTON" android:layout_marginEnd="10dp" android:stateListAnimator="@null" style="?android:attr/buttonStyle"/>
+                <Button android:enabled="false" android:id="@+id/COM_GOOD_GD_EPROV_ACCESS_BUTTON" android:nextFocusDown="@+id/gd_bottom_line_action_label" android:nextFocusForward="@+id/gd_bottom_line_action_label" android:stateListAnimator="@null" style="?android:attr/buttonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</merge>

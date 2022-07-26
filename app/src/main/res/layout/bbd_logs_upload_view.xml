@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <RelativeLayout android:id="@+id/bbd_logs_upload_view_UI" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/bbd_common_header"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_centerInParent="true">
+            <com.good.gd.widget.GDTextView android:id="@+id/bbd_tv_log_uploader_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp"/>
+            <ProgressBar android:id="@+id/bbd_progress_uploading_logs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" style="@style/GDProgressBar.Horizontal"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                <com.good.gd.widget.GDTextView android:layout_gravity="start" android:id="@+id/bbd_tv_percent_progress" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.good.gd.widget.GDTextView android:layout_gravity="end" android:id="@+id/bbd_tv_bytes_progress" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/gd_button_font_size" android:textColor="?android:attr/colorPrimary" android:id="@+id/bbd_btn_cancel_upload_logs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true" style="@android:style/Widget.Holo.Button.Borderless"/>
+                <Button android:textSize="@dimen/gd_button_font_size" android:textColor="?android:attr/colorPrimary" android:id="@+id/bbd_btn_change_upload_logs_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true" style="@android:style/Widget.Holo.Button.Borderless"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@+id/bbd_layout_bottom_line" layout="@layout/bbd_bottom_line"/>
+        <com.good.gd.widget.GDTextView android:gravity="center" android:id="@+id/bbd_tv_network_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_above="@+id/bbd_layout_bottom_line"/>
+    </RelativeLayout>
+</merge>

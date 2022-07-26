@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="root" path="app_data/.DContainer/.gdstartupdata"/>
+    <exclude domain="root" path="app_data/.DContainer/.gdstartupdata2"/>
+    <exclude domain="root" path="app_data/.DContainer/.gdstartupContinuum"/>
+    <exclude domain="root" path="app_data/.DContainer/.gdstartupCore"/>
+    <exclude domain="sharedpref" path="com.good.gt.deviceid.xml"/>
+    <exclude domain="sharedpref" path="com.good.gd.xml"/>
+    <exclude domain="sharedpref" path="com.good.gd.debug.xml"/>
+    <exclude domain="sharedpref" path="com.blackberry.dynamics.xml"/>
+</full-backup-content>

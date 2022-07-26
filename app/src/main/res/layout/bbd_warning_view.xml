@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bbd_warning_view_UI" android:background="@color/bbd_transparent_black" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.good.gd.widget.GDTextView android:textSize="20sp" android:gravity="center_horizontal" android:id="@+id/dialog_header" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.good.gd.widget.GDTextView android:textSize="14sp" android:gravity="center_horizontal" android:id="@+id/dialog_content" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

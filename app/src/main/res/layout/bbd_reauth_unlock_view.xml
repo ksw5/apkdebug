@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bbd_reauth_login_view_UI" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <include layout="@layout/bbd_common_header"/>
+        <ProgressBar android:id="@+id/timeoutProgress" android:layout_width="match_parent" android:layout_height="4dp" android:progress="100" style="@style/GDProgressBar.Horizontal.Rectangle"/>
+        <ScrollView android:id="@+id/reauth_provision_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/clientAppLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/easy_activation_login_container_top_margin" android:layout_marginStart="@dimen/alv_logo_layout_marginLeft" android:layout_marginEnd="@dimen/alv_logo_layout_marginRight">
+                <com.good.gd.widget.GDTextView android:textSize="22sp" android:textStyle="bold" android:gravity="start|center_vertical" android:id="@+id/userTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+                <com.good.gd.widget.GDTextView android:textSize="18sp" android:id="@+id/userText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/easy_activation_login_default_margin" android:includeFontPadding="false"/>
+                <com.good.gd.widget.GDTextView android:textSize="18sp" android:id="@+id/userInstructionText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:includeFontPadding="false"/>
+                <com.good.gd.widget.GDEditText android:textStyle="normal" android:id="@+id/passwordEditor" android:paddingTop="10dp" android:nextFocusDown="@+id/btnOk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/easy_activation_login_default_margin" android:inputType="textPassword" android:imeOptions="actionDone" android:nextFocusForward="@+id/btnOk" android:textCursorDrawable="@null"/>
+                <LinearLayout android:gravity="end" android:id="@+id/LLayoutOkCancelButtons" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" android:layout_marginBottom="20dp">
+                    <Button android:id="@+id/btnCancel" android:focusable="true" android:visibility="gone" android:nextFocusForward="@+id/gd_bottom_line_action_label" style="?android:attr/buttonStyle"/>
+                    <Button android:enabled="false" android:id="@+id/btnOk" android:focusable="true" android:nextFocusForward="@+id/btnCancel" style="?android:attr/buttonStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/bbd_bottom_line"/>
+    </LinearLayout>
+</merge>

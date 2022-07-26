@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <RelativeLayout android:id="@+id/bbd_block_view_UI" android:background="@color/bbd_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_PROGRESSBAR" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/gd_progress_bar" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/bbd_background_header_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/bbd_common_header"/>
+        </LinearLayout>
+        <ScrollView android:id="@+id/main_scrollView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.6">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="@dimen/gd_view_start_end_margin" android:layout_marginEnd="@dimen/gd_view_start_end_margin">
+                <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_text_size_medium" android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_TITLE_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/easy_activation_login_container_top_margin" style="@style/GDTextView"/>
+                <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_block_message_text_size_" android:gravity="center_horizontal" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_MESSAGE_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" style="@style/GDTextView"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.good.gd.widget.GDTextView android:textSize="18sp" android:textColor="?android:attr/colorPrimary" android:gravity="center_horizontal" android:id="@+id/gd_ok_button" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:layout_marginEnd="32dp"/>
+                    <Button android:textSize="@dimen/gd_text_size_medium" android:textColor="@color/bbd_white" android:gravity="center_horizontal" android:id="@+id/gd_unlock_button" android:background="@color/bbd_blue" android:padding="12dp" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:textAllCaps="true" style="@style/GDButton"/>
+                </LinearLayout>
+                <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="20dp"/>
+                <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_text_size_medium" android:gravity="center_horizontal" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_CUSTOM_MESSAGE_VIEW" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" style="@style/GDTextView"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@+id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginStart="16dp">
+            <com.good.gd.widget.GDTextView android:textSize="18sp" android:textColor="?android:attr/colorPrimary" android:id="@+id/gd_mdm_activation_button" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <requestFocus/>
+            </com.good.gd.widget.GDTextView>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/bbd_bottom_line"/>
+</merge>

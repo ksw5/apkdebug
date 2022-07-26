@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/bbd_fingerprint_container_UI" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/content" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="24dp" android:paddingEnd="24dp">
+            <RelativeLayout android:gravity="start" android:id="@+id/fingerprint_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+                <TextView android:id="@+id/fingerprint_title" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GDFingerprintAlertTitleText"/>
+                <TextView android:id="@+id/fingerprint_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/fingerprint_title" style="@style/GDFingerprintAlertContentText"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="start" android:id="@+id/fingerprint_icon_frame" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" android:layout_below="@+id/fingerprint_message">
+                <FrameLayout android:id="@+id/fingerprint_icon_background" android:background="@drawable/gd_fingerprint_background_default" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" android:layout_marginEnd="16dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/fingerprint_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/gd_fingerprint_white" android:contentDescription="@android:string/fingerprint_icon_content_description"/>
+                </FrameLayout>
+                <TextView android:id="@+id/fingerprint_icon_text" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/fingerprint_icon_background" style="@style/GDFingerprintIconText"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:layout_below="@+id/content">
+            <com.good.gd.ui.dialogs.AutoWrapButtonLayout android:gravity="end" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@android:id/button1" android:background="@drawable/bbd_text_view_background_selector" android:focusable="true" android:stateListAnimator="@null" style="@style/GDFingerprintAlertButton"/>
+                <Button android:id="@android:id/button2" android:background="@drawable/bbd_text_view_background_selector" android:focusable="true" android:layout_toEndOf="@android:id/button1" android:stateListAnimator="@null" style="@style/GDFingerprintAlertButton"/>
+            </com.good.gd.ui.dialogs.AutoWrapButtonLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

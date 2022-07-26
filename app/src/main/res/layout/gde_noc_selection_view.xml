@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bbde_noc_selection_view_UI" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <include layout="@layout/bbd_common_header"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1">
+            <ListView android:id="@+id/List" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="?android:attr/divider" android:dividerHeight="1dp"/>
+        </LinearLayout>
+        <View android:background="?android:attr/divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:enabled="false" android:layout_gravity="end" android:id="@+id/COM_GOOD_GD_GDE_NOC_SELECTION_VIEW_CANCEL_BUTTON" android:layout_marginEnd="14dp" style="?android:attr/buttonStyle"/>
+            <Button android:enabled="false" android:layout_gravity="end" android:id="@+id/COM_GOOD_GD_GDE_NOC_SELECTION_VIEW_OK_BUTTON" android:layout_marginEnd="14dp" style="?android:attr/buttonStyle"/>
+        </LinearLayout>
+        <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="20dp"/>
+        <include layout="@layout/bbd_bottom_line"/>
+    </LinearLayout>
+</merge>

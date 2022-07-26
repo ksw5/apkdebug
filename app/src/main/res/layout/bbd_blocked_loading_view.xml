@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <RelativeLayout android:id="@+id/bbd_block_view_UI" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_PROGRESSBAR" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/gd_progress_bar" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/bbd_common_header"/>
+        <ScrollView android:id="@+id/main_scrollView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.6">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+                <com.good.gd.widget.GDTextView android:textSize="18sp" android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_TITLE_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/easy_activation_login_container_top_margin"/>
+                <View android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="20dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/bbd_bottom_line"/>
+</merge>

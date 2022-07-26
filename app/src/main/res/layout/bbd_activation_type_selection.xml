@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bbd_activation_type_selection_view_UI" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:background="@color/bbd_background_header_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/bbd_common_header"/>
+        </LinearLayout>
+        <ScrollView android:background="@color/bbd_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/COM_GOOD_GD_PROVISION_FIELDS" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_top_margin" android:layout_marginBottom="@dimen/gd_selection_bottom_margin" android:layout_marginStart="@dimen/gd_view_start_end_margin" android:layout_marginEnd="@dimen/gd_view_start_end_margin">
+                    <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_selection_get_started_text_size" android:id="@+id/gd_selection_getStarted_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gd_selection_bottom_margin" style="@style/GDSelectionTextView"/>
+                    <RelativeLayout android:orientation="horizontal" android:id="@+id/gd_selection_QR_button" android:background="@drawable/gd_selection_shape" android:layout_width="match_parent" android:layout_height="42dp">
+                        <ImageView android:layout_width="40dp" android:layout_height="match_parent" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:src="@drawable/gd_qr_code" android:layout_centerVertical="true" android:layout_toStartOf="@+id/gd_qr_button_text"/>
+                        <com.good.gd.widget.GDTextView android:textSize="17sp" android:textColor="@color/bbd_almost_white" android:id="@+id/gd_qr_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/COM_GOOD_GD_PROVISION_FIELDS2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/gd_view_start_end_margin" android:layout_marginEnd="@dimen/gd_view_start_end_margin">
+                    <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_selection_No_qr_text_size" android:id="@+id/gd_selection_no_QR_text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans_serif_medium" style="@style/GDSelectionTextView"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/gd_act_progress_layout_large_steps_top_margin">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/gd_selection_sign_in_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gd_selection_bottom_margin">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_sign_in" android:background="@drawable/gd_selection_shape" android:layout_width="@dimen/gd_selection_picture_size" android:layout_height="@dimen/gd_selection_picture_size" android:src="@drawable/bbd_icon_sign_in" android:scaleType="center" android:elevation="2dp"/>
+                            <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_selection_options_text_size" android:gravity="center_vertical" android:id="@+id/text_sign_in" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" style="@style/GDSelectionTextView"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/gd_selection_credentials_option" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/gd_selection_bottom_margin">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@+id/image_enter_credentials" android:background="@drawable/gd_selection_shape" android:layout_width="@dimen/gd_selection_picture_size" android:layout_height="@dimen/gd_selection_picture_size" android:src="@drawable/bbd_icon_credentials" android:scaleType="center"/>
+                            <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_selection_options_text_size" android:gravity="center_vertical" android:id="@+id/text_enter_credentials" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="16dp" style="@style/GDSelectionTextView"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</merge>

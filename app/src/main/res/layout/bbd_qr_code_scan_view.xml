@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/gd_qr_code_scanner_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/provision_view" android:background="@color/bbd_background_color" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/bbde_scan_view_UI" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/bbd_background_header_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/bbd_activation_header"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.good.gd.ui.base_ui.GDSquareLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@+id/gd_barcode_scanner" android:layout_width="match_parent" android:layout_height="wrap_content" app:zxing_framing_rect_height="@dimen/gd_qr_code_scan_view_framing" app:zxing_framing_rect_width="@dimen/gd_qr_code_scan_view_framing" app:zxing_preview_scaling_strategy="1" app:zxing_use_texture_view="true"/>
+                    </com.good.gd.ui.base_ui.GDSquareLayout>
+                    <ImageView android:background="@drawable/gd_qr_scan_phone" android:layout_width="@dimen/gd_qr_code_image_high" android:layout_height="@dimen/gd_qr_code_image_high" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="QR code scan image"/>
+                </RelativeLayout>
+                <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_text_size_medium" android:gravity="center" android:id="@+id/gd_qr_code_scan_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_qr_code_text_label_margin_top" style="@style/GDTextView"/>
+                <include layout="@layout/bbd_bottom_button"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</merge>

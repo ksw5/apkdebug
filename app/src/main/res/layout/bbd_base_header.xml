@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/bbd_base_header" android:layout_width="match_parent" android:layout_height="@dimen/gd_common_header_height">
+    <ImageView android:id="@+id/gd_app_logo" android:layout_width="wrap_content" android:layout_height="@dimen/gd_common_header_logo_height" android:src="@drawable/bbd_logo" android:scaleType="fitStart" android:adjustViewBounds="true" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginStart="@dimen/easy_activation_login_default_margin" android:layout_alignParentStart="true"/>
+    <include layout="@layout/bbd_selected_noc_info"/>
+    <ImageView android:id="@+id/gd_help" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/help" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="@dimen/easy_activation_login_default_margin" android:layout_alignParentEnd="true"/>
+    <View android:id="@+id/gd_progress_line" android:background="@color/bbd_blue" android:visibility="invisible" android:layout_width="0dp" android:layout_height="@dimen/gd_common_header_progress_line_height" android:layout_marginTop="@dimen/gd_common_header_progress_line_margin_top" android:layout_below="@+id/gd_app_logo"/>
+    <View android:id="@+id/gd_top_header_shadow" android:background="@drawable/bbd_shadow_header_line_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/gd_progress_line"/>
+</RelativeLayout>

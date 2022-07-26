@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bbde_provision_view_UI" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/provision_view" android:background="@color/bbd_background_color" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/bbd_provision_view_header_layout" android:background="@color/bbd_background_header_color" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/bbd_activation_ui_top_margin_layout" android:layout_width="match_parent" android:layout_height="@dimen/gd_view_top_margin"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/bbd_provision_fields_linear_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/gd_view_start_end_margin" android:layout_marginEnd="@dimen/gd_view_start_end_margin">
+                        <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_text_size_medium" android:textStyle="bold" android:gravity="start" android:layout_gravity="start" android:id="@+id/gd_application_unlock_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_margin_top" style="@style/GDTextView"/>
+                        <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_text_size_regular" android:gravity="start" android:autoLink="web" android:linksClickable="true" android:id="@+id/gd_application_unlock_message" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_margin_small" style="@style/GDTextView"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/gd_view_start_end_margin" android:layout_marginEnd="@dimen/gd_view_start_end_margin">
+                        <com.good.gd.widget.GDTextView android:id="@+id/gd_activation_info" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GDSelectionTextView"/>
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_margin_provision_small">
+                            <com.good.gd.widget.GDEditText android:textSize="@dimen/gd_text_size_large" android:id="@+id/COM_GOOD_GD_EPROV_EMAIL_FIELD" android:nextFocusRight="@+id/COM_GOOD_GD_EPROV_PASSWORD_FIELD" android:nextFocusDown="@+id/COM_GOOD_GD_EPROV_PASSWORD_FIELD" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:imeOptions="flagNoFullscreen|actionNext" android:alpha="@dimen/gd_text_transparent" android:nextFocusForward="@+id/COM_GOOD_GD_EPROV_PASSWORD_FIELD" style="@style/GDUIEditText"/>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/COM_GOOD_GD_EPROV_PASSWORD_LAYOUT" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_margin_between_edit_fields">
+                            <com.good.gd.widget.GDEditText android:textSize="@dimen/gd_text_size_large" android:id="@+id/COM_GOOD_GD_EPROV_PASSWORD_FIELD" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:imeOptions="flagNoFullscreen|actionNext" android:alpha="@dimen/gd_text_transparent" style="@style/GDUIEditText"/>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/gd_activation_margin_regular">
+                                <ImageButton android:layout_gravity="end" android:id="@+id/prov_password_eye" android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="20dp" android:src="@drawable/gd_eye_show_inactive"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@+id/COM_GOOD_GD_EPROV_BCP_URL_LAYOUT" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_margin_between_edit_fields">
+                            <com.good.gd.widget.GDEditText android:textSize="@dimen/gd_text_size_large" android:id="@+id/COM_GOOD_GD_EPROV_BCP_URL_FIELD" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:imeOptions="flagNoFullscreen|actionDone" android:alpha="@dimen/gd_text_transparent" style="@style/GDUIEditText"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@+id/COM_GOOD_GD_FORGOT_FLOW_FIELDS" android:paddingTop="@dimen/gd_button_fields_padding_top" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:layout_gravity="end" android:id="@+id/COM_GOOD_GD_GDE_PROVISION_VIEW_CANCEL_BUTTON" android:visibility="visible" android:layout_width="wrap_content" android:nextFocusForward="@+id/gd_bottom_line_action_label" style="@style/GDButton"/>
+                    <Button android:enabled="false" android:layout_gravity="end" android:id="@+id/COM_GOOD_GD_EPROV_ACCESS_BUTTON" android:visibility="visible" android:nextFocusForward="@+id/COM_GOOD_GD_GDE_PROVISION_VIEW_CANCEL_BUTTON" style="@style/GDButton"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/COM_GOOD_GD_PROVISION_FIELDS" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_info_text_top_margin" android:layout_marginStart="@dimen/gd_view_start_end_margin" android:layout_marginEnd="@dimen/gd_view_start_end_margin">
+                    <Button android:layout_gravity="center_horizontal" android:id="@+id/COM_GOOD_GD_SCAN_QR_CODE" android:paddingTop="@dimen/gd_qr_code_button_top_padding" android:paddingBottom="@dimen/gd_qr_code_button_top_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_view_margin_regular" android:paddingStart="@dimen/gd_qr_code_button_start_padding" android:paddingEnd="@dimen/gd_qr_code_button_end_padding" style="@style/GDQRButton"/>
+                </LinearLayout>
+                <include layout="@layout/bbd_bottom_button"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</merge>

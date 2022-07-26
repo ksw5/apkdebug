@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bbd_common_background"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/bbd_common_header"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/bbd_mtd_block_view_UI" android:layout_width="match_parent" android:layout_height="0dp" android:baselineAligned="false" android:layout_weight="1" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+                <com.good.gd.widget.GDTextView android:textSize="18sp" android:textStyle="bold" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_TITLE_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mtd_top_margin"/>
+                <com.good.gd.widget.GDTextView android:textSize="18sp" android:gravity="left" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_MESSAGE_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/bbd_mtd_malware_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <com.good.gd.widget.GDTextView android:textSize="18sp" android:textStyle="bold" android:gravity="left" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_MALWARE_MESSAGE_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                    <com.good.gd.widget.GDTextView android:textSize="14sp" android:gravity="left" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_MALWARE_SUB_TEXT_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+                    <ListView android:id="@+id/MalwareList" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/bbd_button_bg" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/bbd_mtd_sideload_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <com.good.gd.widget.GDTextView android:textSize="18sp" android:textStyle="bold" android:gravity="left" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_SIDELOAD_MESSAGE_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                    <com.good.gd.widget.GDTextView android:textSize="14sp" android:gravity="left" android:id="@+id/COM_GOOD_GD_BLOCK_VIEW_SIDELOAD_SUB_TEXT_VIEW" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+                    <ListView android:id="@+id/SideLoadList" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/bbd_button_bg" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/bbd_bottom_line"/>
+    </LinearLayout>
+</merge>

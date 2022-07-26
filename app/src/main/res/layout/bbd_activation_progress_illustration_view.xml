@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/gd_activation_title">
+    <ImageView android:id="@+id/gd_data" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_data" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/gd_view_margin_small" android:layout_alignParentStart="true"/>
+    <ImageView android:id="@+id/gd_shield_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/gd_anim_shield_small" android:layout_marginStart="72dp" android:layout_alignParentStart="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/anim_arrows_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/gd_data">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_arrow" android:alpha="@dimen/gd_text_transparent" android:layout_marginEnd="@dimen/gd_arrow_margin_end"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_arrow" android:alpha="@dimen/gd_text_transparent" android:layout_marginEnd="@dimen/gd_arrow_margin_end"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_arrow" android:alpha="@dimen/gd_text_transparent" android:layout_marginEnd="@dimen/gd_arrow_margin_end"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_arrow" android:alpha="@dimen/gd_text_transparent" android:layout_marginEnd="@dimen/gd_arrow_margin_end"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_arrow" android:alpha="@dimen/gd_text_transparent" android:layout_marginEnd="@dimen/gd_arrow_margin_end"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_arrow" android:alpha="@dimen/gd_text_transparent" android:layout_marginEnd="@dimen/gd_arrow_margin_end"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_arrow" android:alpha="@dimen/gd_text_transparent"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/gd_shield_big" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_anim_shield_big" android:layout_centerVertical="true" android:layout_marginStart="@dimen/gd_view_margin_small" android:layout_toEndOf="@+id/anim_arrows_layout"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_phone_and_lock" android:layout_centerVertical="true" android:layout_marginStart="@dimen/gd_act_progress_step_phone_and_lock_image" android:layout_toEndOf="@+id/anim_arrows_layout"/>
+</RelativeLayout>

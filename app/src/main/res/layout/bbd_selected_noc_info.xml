@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gd_view_start_end_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+    <com.good.gd.widget.GDTextView android:textColor="?android:attr/colorPrimary" android:gravity="center" android:id="@+id/gd_simulation_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.good.gd.widget.GDTextView android:textColor="?android:attr/colorPrimary" android:gravity="center" android:id="@+id/gd_selected_noc_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

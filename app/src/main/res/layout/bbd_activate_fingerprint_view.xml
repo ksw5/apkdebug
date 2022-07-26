@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/bbd_common_background"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bbd_activate_fingerprint_view_UI" android:background="@color/bbd_background_header_color" android:layout_width="match_parent" android:layout_height="56dp" android:elevation="10dp">
+                <ImageView android:id="@+id/COM_GOOD_GD_ACTIVATE_FINGERPRINT_VIEW_BACK" android:background="@drawable/bbd_text_view_background_selector" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gd_back" android:contentDescription="@android:string/cancel" android:layout_marginStart="20dp">
+                    <requestFocus/>
+                </ImageView>
+                <TextView android:id="@+id/COM_GOOD_GD_ACTIVATE_FINGERPRINT_VIEW_TITLE" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="38dp" style="@style/GDFingerprintOptionTitleText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:baselineAligned="false" android:layout_marginStart="30dp" android:layout_marginEnd="30dp">
+                <TextView android:id="@+id/COM_GOOD_GD_ACTIVATE_FINGERPRINT_VIEW_TEXT" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/GDFingerprintOptionContentText"/>
+                <Switch android:id="@+id/toggle_button" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:nextFocusForward="@+id/COM_GOOD_GD_ACTIVATE_FINGERPRINT_VIEW_BACK" android:switchPadding="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

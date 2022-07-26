@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:id="@+id/bbd_common_button_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gd_bottom_button_margin_top" android:layout_marginBottom="@dimen/gd_bottom_button_margin_bottom">
+    <com.good.gd.widget.GDTextView android:textSize="@dimen/gd_text_size_medium" android:textColor="@color/bbd_blue" android:id="@+id/gd_bottom_line_action_label" android:focusable="true" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/gd_padding_regular" android:paddingEnd="@dimen/gd_padding_regular"/>
+</LinearLayout>
